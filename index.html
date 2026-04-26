@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jarz Testdev — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+  <div class="bg-overlay"></div>
+  <div class="bg-noise"></div>
+
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <i class="fas fa-code"></i>
+      Jarz Testdev
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <button class="lang-btn" id="langBtn" aria-label="Switch Language">
+      <i class="fas fa-globe"></i>
+      <span id="langLabel">ID</span>
+    </button>
+    <a href="#contact" class="nav-cta" data-i18n="nav_cta">
+      Let's Talk <i class="fas fa-arrow-right"></i>
+    </a>
+    <div class="nav-mobile-btn" id="menuBtn" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-badge reveal">
+      <span class="status-dot"></span>
+      <span data-i18n="hero_badge">about me</span>
+    </div>
+    <h1 class="hero-title reveal stagger-1">
+      Jarz Test <span class="gradient-text">dev</span>
+    </h1>
+    <p class="hero-subtitle reveal stagger-2" data-i18n="hero_sub">
+      Frontend Developer &amp; UI Designer. Crafting pixel-perfect, immersive web experiences with modern technologies.
+    </p>
+    <div class="hero-cta reveal stagger-3">
+      <a href="#projects" class="btn-primary" data-i18n="hero_cta1">View My Work <i class="fas fa-arrow-down"></i></a>
+      <a href="#contact" class="btn-ghost" data-i18n="hero_cta2">Get In Touch <i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="scroll-indicator reveal stagger-4">
+      <span data-i18n="scroll_hint">SCROLL DOWN</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-user"></i> <span data-i18n="about_tag">About Me</span></div>
+      <h2 class="section-title">Meet <span>Jarz Testdev</span></h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text reveal-left">
+        <h3 data-i18n="about_heading">Frontend Developer &amp; UI Enthusiast</h3>
+        <p data-i18n="about_p1">
+          Hi, I'm Jarz Testdev — a passionate frontend developer who loves creating beautiful, functional, and user-friendly web applications.
+        </p>
+        <p data-i18n="about_p2">
+          With expertise in React, Next.js, and modern CSS frameworks, I build seamless user experiences that not only look amazing but also perform flawlessly across all devices.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item reveal stagger-1"><i class="fas fa-rocket"></i><span class="num">50+</span><span class="label" data-i18n="stat1">Projects Done</span></div>
+          <div class="stat-item reveal stagger-2"><i class="fas fa-clock"></i><span class="num">3+</span><span class="label" data-i18n="stat2">Years Exp.</span></div>
+          <div class="stat-item reveal stagger-3"><i class="fas fa-heart"></i><span class="num">100%</span><span class="label" data-i18n="stat3">Satisfaction</span></div>
+          <div class="stat-item reveal stagger-4"><i class="fas fa-coffee"></i><span class="num">∞</span><span class="label" data-i18n="stat4">Coffee Consumed</span></div>
+        </div>
+      </div>
+      <div class="about-visual reveal-right">
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <div class="avatar-placeholder">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+          </div>
+          <div class="floating-elements">
+            <div class="float-icon"><i class="fab fa-react"></i></div>
+            <div class="float-icon"><i class="fab fa-js"></i></div>
+            <div class="float-icon"><i class="fab fa-css3-alt"></i></div>
+          </div>
+          <div class="avatar-badge"><i class="fas fa-circle-check"></i> <span data-i18n="badge_open">Open to Work</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-layer-group"></i> <span data-i18n="skills_tag">Skills</span></div>
+      <h2 class="section-title">My <span data-i18n="skills_title_hl">Expertise</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal stagger-1" data-level="95">
+        <div class="skill-icon"><i class="fab fa-react"></i></div>
+        <h3 data-i18n="sk1_title">React Ecosystem</h3>
+        <p data-i18n="sk1_desc">Building dynamic user interfaces with React, Next.js, and modern hooks architecture.</p>
+        <div class="skill-tags"><span>React</span><span>Next.js</span><span>Hooks</span><span>Context</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-2" data-level="90">
+        <div class="skill-icon"><i class="fab fa-js"></i></div>
+        <h3 data-i18n="sk2_title">JavaScript &amp; TypeScript</h3>
+        <p data-i18n="sk2_desc">Writing clean, type-safe code with modern ES6+ features and TypeScript integration.</p>
+        <div class="skill-tags"><span>ES6+</span><span>TypeScript</span><span>Async/Await</span><span>DOM API</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-3" data-level="92">
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3 data-i18n="sk3_title">Styling &amp; Animation</h3>
+        <p data-i18n="sk3_desc">Creating beautiful, responsive designs with Tailwind, SCSS, and smooth animations.</p>
+        <div class="skill-tags"><span>Tailwind</span><span>SCSS</span><span>Framer</span><span>GSAP</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-4" data-level="85">
+        <div class="skill-icon"><i class="fas fa-mobile-screen"></i></div>
+        <h3 data-i18n="sk4_title">Responsive Design</h3>
+        <p data-i18n="sk4_desc">Building mobile-first experiences that work flawlessly across all devices.</p>
+        <div class="skill-tags"><span>Mobile First</span><span>Flexbox</span><span>Grid</span><span>PWA</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-5" data-level="80">
+        <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+        <h3 data-i18n="sk5_title">UI/UX Design</h3>
+        <p data-i18n="sk5_desc">Designing intuitive interfaces in Figma with focus on user experience.</p>
+        <div class="skill-tags"><span>Figma</span><span>Prototyping</span><span>Design Sys</span><span>Wireframe</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+      <div class="skill-card reveal stagger-1" data-level="75">
+        <div class="skill-icon"><i class="fas fa-cube"></i></div>
+        <h3 data-i18n="sk6_title">3D &amp; Graphics</h3>
+        <p data-i18n="sk6_desc">Adding immersive 3D experiences with Three.js and WebGL technologies.</p>
+        <div class="skill-tags"><span>Three.js</span><span>WebGL</span><span>Blender</span><span>GLSL</span></div>
+        <div class="skill-level"><div class="skill-level-bar"><div class="skill-level-fill"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-code-branch"></i> <span data-i18n="projects_tag">Projects</span></div>
+      <h2 class="section-title">Featured <span data-i18n="projects_title_hl">Work</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal stagger-1">
+        <div class="project-img">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>Portfolio Website</h3>
+        <p>Modern portfolio with smooth animations and responsive design.</p>
+        <div class="project-tech">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="project-github"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-2">
+        <div class="project-img">
+          <i class="fas fa-cart-shopping"></i>
+        </div>
+        <h3>E-Commerce App</h3>
+        <p>Full-featured e-commerce platform with cart and checkout system.</p>
+        <div class="project-tech">
+          <span>React</span><span>Context API</span><span>CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="project-github"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+      <div class="project-card reveal stagger-3">
+        <div class="project-img">
+          <i class="fas fa-dashboard"></i>
+        </div>
+        <h3>Analytics Dashboard</h3>
+        <p>Interactive dashboard with charts and real-time data visualization.</p>
+        <div class="project-tech">
+          <span>Next.js</span><span>Tailwind</span><span>Chart.js</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="project-github"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-paper-plane"></i> <span data-i18n="contact_tag">Contact</span></div>
+      <h2 class="section-title" data-i18n="contact_title">Let's Build Something <span>Amazing</span></h2>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info reveal-left">
+        <h2 data-i18n="contact_h2">Have a project in mind?</h2>
+        <p data-i18n="contact_p">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div><label data-i18n="ci_email">Email</label><span>pajarr6767@gmail.com</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div><label data-i18n="ci_loc">Location</label><span>Indonesia (WIB)</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div><label data-i18n="ci_resp">Response Time</label><span data-i18n="ci_resp_val">Within 24 hours</span></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="contact-card reveal-right">
+        <div class="contact-card-content">
+          <h3><i class="fas fa-bolt" style="color:var(--accent);margin-right:.5rem;"></i> <span data-i18n="quick_contact">Quick Contact</span></h3>
+          <div class="email-display"><i class="fas fa-at"></i>pajarr6767@gmail.com</div>
+          <div class="availability-status">
+            <i class="fas fa-circle-check"></i>
+            <span data-i18n="avail_status">Ready to collaborate</span>
+          </div>
+          <a href="mailto:pajarr6767@gmail.com" class="btn-primary" style="width:100%;justify-content:center;">
+            <span data-i18n="send_email">Send Email</span> <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo"><i class="fas fa-code"></i> Jarz Testdev</div>
+      <p class="footer-text">
+        © 2026 Jarz Testdev. <span data-i18n="footer_made">Made with</span> <span class="footer-heart"><i class="fas fa-heart"></i></span> <span data-i18n="footer_coffee">and lots of coffee</span>
+      </p>
+      <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i> <span data-i18n="back_top">Back to Top</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
